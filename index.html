@@ -9,8 +9,73 @@
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="https://www.astudentsguidetolaw.com"/>
 		<meta content="new logo.jpg" property="og:image"/>
+
+		<!-- Top Navigation Bar Styles (Overrides Template Defaults) -->
+		<style>
+			#top-bar {
+				position: fixed !important;
+				top: 0 !important;
+				left: 0 !important;
+				width: 100% !important;
+				height: 50px !important;
+				background-color: #ffffff !important;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+				z-index: 99999 !important;
+				display: flex !important;
+				align-items: center !important;
+				justify-content: flex-end !important;
+				padding: 0 2em !important;
+			}
+			#top-bar ul {
+				list-style: none !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				display: flex !important;
+				flex-direction: row !important;
+				gap: 1.8em !important;
+			}
+			#top-bar li {
+				display: inline-block !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				list-style: none !important;
+			}
+			#top-bar li::before {
+				display: none !important; /* Removes bullet points */
+			}
+			#top-bar a {
+				text-decoration: none !important;
+				font-weight: 600 !important;
+				font-size: 0.9em !important;
+				color: #444444 !important;
+				border-bottom: none !important;
+				letter-spacing: 0.5px !important;
+				transition: color 0.2s ease !important;
+			}
+			#top-bar a:hover {
+				color: #49bf9d !important;
+			}
+			/* Adjust header & body padding so content isn't hidden under the top bar */
+			body {
+				padding-top: 50px !important;
+			}
+			#header {
+				top: 50px !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+
+		<!-- True Top Navigation Bar -->
+		<nav id="top-bar">
+			<ul>
+				<li><a href="#one">Home</a></li>
+				<li><a href="#two">Sections</a></li>
+				<li><a href="#recent">Most Recent Articles</a></li>
+				<li><a href="#three">Contact Us</a></li>
+				<li><a href="#team">The Team, The Project</a></li>
+			</ul>
+		</nav>
 
 		<!-- Header -->
 			<header id="header">
@@ -18,16 +83,6 @@
 					<a href="#" class="image avatar"><img src="new logo.jpg" alt="" /></a>
 					<h1><strong>Welcome to this awesome site, student!</strong> If you're interested in collaborating or supporting, contacts are down below! <br /> <br />
 					Sending you a big hug &lt;3</h1>
-					<!-- Navigation Tabs -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#one">Home</a></li>
-							<li><a href="#two">Sections</a></li>
-							<li><a href="#recent">Recent Articles</a></li>
-							<li><a href="#three">Contact Us</a></li>
-							<li><a href="#team">The Team, The Project</a></li>
-						</ul>
-					</nav>
 				</div>
 			</header>
 
@@ -41,13 +96,13 @@
 							<h3>Explore law with these bite-sized, simplified articles</h3>
 						</header>
 						<p>Welcome, curious student!</p>
-						<p>Wondering how it would be like to study law? Interested in knowing some concepts for your own entertainment?  Check out my articles, often presented with a hook question that might spark up your mind.</p>
+						<p>Wondering how it would be like to study law? Interested in knowing some concepts for your own entertainment? Check out my articles, often presented with a hook question that might spark up your mind.</p>
 						<ul class="actions">
 							<li><a href="#two" class="button">Content</a></li>
 						</ul>
 					</section>
 
-				<!-- Two (Sections - 4 items only with Read More / Article links) -->
+				<!-- Two (Sections - 4 items only with Read More links) -->
 					<section id="two">
 						<h2>Sections</h2>
 						<div class="row">
