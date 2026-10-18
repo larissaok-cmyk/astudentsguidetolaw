@@ -12,21 +12,25 @@
 
 		<!-- Custom Social Icons Styling -->
 		<style>
-			.custom-icon {
-				display: inline-block !important;
-				vertical-align: middle !important;
-			}
-			.custom-icon img {
-				width: 1.8em !important;
-				height: 1.8em !important;
-				vertical-align: middle !important;
-				opacity: 0.6 !important;
-				transition: opacity 0.2s ease !important;
-			}
-			.custom-icon img:hover {
-				opacity: 1 !important;
-			}
-		</style>
+	/* Custom social icons styling */
+	.custom-icon {
+		display: inline-block !important;
+		vertical-align: middle !important;
+	}
+	.custom-icon img {
+		width: 1.2em !important;
+		height: 1.2em !important;
+		object-fit: contain !important; /* Preserves exact aspect ratio (prevents squishing/skinny look) */
+		vertical-align: middle !important;
+		opacity: 0.55 !important;
+		filter: brightness(0.9) grayscale(100%) !important; /* Matches template icon shade */
+		transition: opacity 0.2s ease, filter 0.2s ease !important;
+	}
+	.custom-icon img:hover {
+		opacity: 1 !important;
+		filter: brightness(1) grayscale(0%) !important;
+	}
+</style>
 		
 		<!-- Top Navigation Bar Styles (Overrides Template Defaults) -->
 		<style>
@@ -222,32 +226,31 @@
 
 		<!-- Footer -->
 			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<!-- TikTok Logo -->
-						<li class="custom-icon">
-							<a href="https://www.tiktok.com/@astudentsguidetol" target="_blank" aria-label="TikTok">
-								<img src="tiktoklogo.png" alt="TikTok" />
-							</a>
-						</li>
+	<div class="inner">
+		<ul class="icons">
+			<!-- TikTok Logo -->
+			<li class="custom-icon">
+				<a href="https://www.tiktok.com/@astudentsguidetol" target="_blank" aria-label="TikTok">
+					<img src="tiktoklogo.png" alt="TikTok" />
+				</a>
+			</li>
 
-						<!-- Substack Logo -->
-						<li class="custom-icon">
-							<a href="https://littlesnippetsoflaw.substack.com" target="_blank" aria-label="Substack">
-								<img src="substacklogo.png" alt="Substack" />
-							</a>
-						</li>
+			<!-- Substack Logo -->
+			<li class="custom-icon">
+				<a href="https://littlesnippetsoflaw.substack.com" target="_blank" aria-label="Substack">
+					<img src="substacklogo.png" alt="Substack" />
+				</a>
+			</li>
 
-						<!-- Email Icon (Kept native FontAwesome icon) -->
-						<li>
-							<a href="mailto:astudentsguidetolaw@gmail.com" class="icon solid fa-envelope">
-								<span class="label">Email</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</footer>
-
+			<!-- Email Icon -->
+			<li>
+				<a href="mailto:astudentsguidetolaw@gmail.com" class="icon solid fa-envelope">
+					<span class="label">Email</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</footer>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
