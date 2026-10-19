@@ -11,37 +11,58 @@
 		<meta property="og:url" content="https://www.astudentsguidetolaw.com"/>
 		<meta content="new logo.jpg" property="og:image"/>
 
+		<!-- Header Background Image -->
 		<style>
-	#header {
-		background-image: url("images/overlay.png"), url("header.jpg") !important;
-		background-size: auto, cover !important;
-	}
-</style>
+			#header {
+				background-image: url("images/overlay.png"), url("header.jpg") !important;
+				background-size: auto, cover !important;
+			}
+		</style>
 
 		<!-- Custom Social Icons Styling -->
-	<style>
-	/* Custom social icons styling - Scaled up for perfect size */
-	.custom-icon {
-		display: inline-block !important;
-		vertical-align: middle !important;
-	}
-	.custom-icon img {
-		width: 1.9em !important;
-		height: 1.9em !important;
-		object-fit: contain !important; /* Keeps proportions normal, no skinny stretching */
-		vertical-align: middle !important;
-		opacity: 0.6 !important;
-		filter: brightness(0.9) grayscale(100%) !important;
-		transition: opacity 0.2s ease, filter 0.2s ease !important;
-	}
-	.custom-icon img:hover {
-		opacity: 1 !important;
-		filter: brightness(1) grayscale(0%) !important;
-	}
-</style>
-		
-		<!-- Top Navigation Bar Styles (Overrides Template Defaults) -->
 		<style>
+			.custom-icon {
+				display: inline-block !important;
+				vertical-align: middle !important;
+			}
+			.custom-icon img {
+				width: 1.9em !important;
+				height: 1.9em !important;
+				object-fit: contain !important;
+				vertical-align: middle !important;
+				opacity: 0.6 !important;
+				filter: brightness(0.9) grayscale(100%) !important;
+				transition: opacity 0.2s ease, filter 0.2s ease !important;
+			}
+			.custom-icon img:hover {
+				opacity: 1 !important;
+				filter: brightness(1) grayscale(0%) !important;
+			}
+		</style>
+		
+		<!-- Top Navigation Bar & Burgundy Theme Overrides -->
+		<style>
+			/* Global Burgundy Accents */
+			a {
+				color: #6B1D2F !important;
+			}
+			a:hover {
+				color: #8C2940 !important;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				color: #6B1D2F !important;
+			}
+			.button {
+				border-color: #6B1D2F !important;
+				color: #6B1D2F !important;
+			}
+			.button:hover {
+				border-color: #8C2940 !important;
+				color: #8C2940 !important;
+				background-color: rgba(107, 29, 47, 0.05) !important;
+			}
+
+			/* Top Navigation Bar Styles */
 			#top-bar {
 				position: fixed !important;
 				top: 0 !important;
@@ -71,7 +92,7 @@
 				list-style: none !important;
 			}
 			#top-bar li::before {
-				display: none !important; /* Removes bullet points */
+				display: none !important;
 			}
 			#top-bar a {
 				text-decoration: none !important;
@@ -83,9 +104,10 @@
 				transition: color 0.2s ease !important;
 			}
 			#top-bar a:hover {
-				color: #49bf9d !important;
+				color: #6B1D2F !important; /* Burgundy hover color */
 			}
-			/* Adjust header & body padding so content isn't hidden under the top bar */
+			
+			/* Layout Adjustments */
 			body {
 				padding-top: 50px !important;
 			}
@@ -234,31 +256,32 @@
 
 		<!-- Footer -->
 			<footer id="footer">
-	<div class="inner">
-		<ul class="icons">
-			<!-- TikTok Logo -->
-			<li class="custom-icon">
-				<a href="https://www.tiktok.com/@astudentsguidetol" target="_blank" aria-label="TikTok">
-					<img src="tiktoklogo.png" alt="TikTok" />
-				</a>
-			</li>
+				<div class="inner">
+					<ul class="icons">
+						<!-- TikTok Logo -->
+						<li class="custom-icon">
+							<a href="https://www.tiktok.com/@astudentsguidetol" target="_blank" aria-label="TikTok">
+								<img src="tiktoklogo.png" alt="TikTok" />
+							</a>
+						</li>
 
-			<!-- Substack Logo -->
-			<li class="custom-icon">
-				<a href="https://littlesnippetsoflaw.substack.com" target="_blank" aria-label="Substack">
-					<img src="substacklogo.png" alt="Substack" />
-				</a>
-			</li>
+						<!-- Substack Logo -->
+						<li class="custom-icon">
+							<a href="https://littlesnippetsoflaw.substack.com" target="_blank" aria-label="Substack">
+								<img src="substacklogo.png" alt="Substack" />
+							</a>
+						</li>
 
-			<!-- Email Icon -->
-			<li>
-				<a href="mailto:astudentsguidetolaw@gmail.com" class="icon solid fa-envelope">
-					<span class="label">Email</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</footer>
+						<!-- Email Icon -->
+						<li>
+							<a href="mailto:astudentsguidetolaw@gmail.com" class="icon solid fa-envelope">
+								<span class="label">Email</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
