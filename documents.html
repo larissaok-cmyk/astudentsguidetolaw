@@ -66,11 +66,73 @@
 		</nav>
 
         <!-- Page Content -->
-        <div class="content-container">
-            <h1>Section Page</h1>
-            <p>This page is currently under construction. Check back soon for all articles in this category!</p>
-            <p><a href="index.html">&larr; Back to Home</a></p>
+    <div class="content-container">
+        
+        <!-- 1. Top Banner Placeholder -->
+        <div class="banner-placeholder" style="width: 100%; height: 250px; background-color: #f2f2f2; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; margin-bottom: 2em; border-radius: 4px;">
+            <span style="color: #777; font-weight: bold;">[ Insert Banner Image Here ]</span>
         </div>
+
+        <!-- 2. Main Title and Tiny Paragraph -->
+        <h1>America's Law Documents</h1>
+        <p style="color: #666; font-size: 0.95em; margin-bottom: 2.5em;">
+          Let's talk about the documents that shaped the U.S. government structure to what it is today. 
+        </p>
+
+        <!-- 3. Expandable Article Slider / Accordion Card -->
+        <div class="article-card" style="border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1.5em; overflow: hidden; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            
+            <!-- Visible Preview Section -->
+            <div class="article-preview" style="display: flex; align-items: center; padding: 1.5em; gap: 1.5em; flex-wrap: wrap;">
+                
+                <!-- Article Thumbnail -->
+                <div style="flex: 0 0 120px; height: 90px; background: #f2f2f2; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 0.8em; color: #888;">[Image]</span>
+                </div>
+
+                <!-- Article Titles & Short Preview Text -->
+                <div style="flex: 1; min-width: 200px;">
+                    <h3 style="margin: 0 0 0.4em 0; font-size: 1.2em; color: #333;">Article Title Goes Here</h3>
+                    <p style="margin: 0; font-size: 0.9em; color: #666;">This is a short preview snippet of what the document or article is about before expanding it.</p>
+                </div>
+
+                <!-- Downward Triangle Toggle Button -->
+                <div>
+                    <button onclick="toggleArticle(this)" style="background: none; border: none; cursor: pointer; font-size: 1.2em; color: #6B1D2F; padding: 10px; transition: transform 0.3s ease;">
+                        ▼
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hidden Full Article Content (Opens on click) -->
+            <div class="article-content" style="display: none; padding: 0 1.5em 1.5em 1.5em; border-top: 1px solid #f0f0f0; background: #fafafa;">
+                <p style="margin-top: 1em; color: #444; line-height: 1.6;">
+                    Here is where the full text of your article will go. You can write paragraphs, insert lists, or add more details here. When the user clicks the downward triangle button, this entire block smoothly drops down to show everything.
+                </p>
+                <p style="color: #444; line-height: 1.6;">
+                    You can duplicate this entire <code>&lt;div class="article-card"&gt;</code> block for as many articles as you need!
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript to handle the dropdown toggle -->
+    <script>
+        function toggleArticle(button) {
+            const card = button.closest('.article-card');
+            const content = card.querySelector('.article-content');
+            
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                button.style.transform = 'rotate(180deg)'; // Flips arrow upward when open
+            } else {
+                content.style.display = 'none';
+                button.style.transform = 'rotate(0deg)'; // Flips arrow back down when closed
+            }
+        }
+    </script>
 
 	</body>
 </html>
