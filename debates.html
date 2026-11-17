@@ -22,7 +22,7 @@
 				z-index: 99999 !important;
 				display: flex !important;
 				align-items: center !important;
-				justify-content: flex-end !important;
+				justify-content: space-between !important;
 				padding: 0 2em !important;
 			}
 			#top-bar ul {
@@ -42,14 +42,14 @@
 			#top-bar a:hover {
 				color: #6B1D2F !important;
 			}
-           .content-container {
-               max-width: 800px;
-               margin: 40px auto;
-               padding: 20px;
-           }
-           h1 {
-               color: #6B1D2F;
-           }
+			.content-container {
+				max-width: 800px;
+				margin: 40px auto;
+				padding: 20px;
+			}
+			h1 {
+				color: #6B1D2F;
+			}
 		</style>
 	</head>
 	<body>
@@ -57,12 +57,11 @@
 		<!-- Top Navigation Bar -->
 		<nav id="top-bar">
 			<!-- Logo on the far left -->
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="new logo.jpg" alt="Logo" style="height: 30px; width: auto; display: block;" />
-			
-        </a>
-    </div>
+			<div class="logo-container">
+				<a href="index.html">
+					<img src="new logo.jpg" alt="Logo" style="height: 30px; width: auto; display: block;" />
+				</a>
+			</div>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="documents.html">Documents</a></li>
@@ -74,247 +73,124 @@
 			</ul>
 		</nav>
 
-        <!-- Page Content -->
-    <div class="content-container">
+		<!-- Page Content -->
+		<div class="content-container">
 
+			<!-- Banner -->
+			<div class="banner-container" style="width: 100%; height: 250px; margin-bottom: 2em; border-radius: 4px; overflow: hidden;">
+				<a href="#" style="display: block; width: 100%; height: 100%;">
+					<img src="ams.jpg" alt="Banner Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+				</a>
+			</div>
 
-		<!-- Banner -->
-       <div class="banner-container" style="width: 100%; height: 250px; margin-bottom: 2em; border-radius: 4px; overflow: hidden;">
-    <a href="#" style="display: block; width: 100%; height: 100%;">
-        <img src="ams.jpg" alt="Banner Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-    </a>
-</div>
- 
+			<!-- Main Title and Paragraph -->
+			<h1>Debates</h1>
+			<p style="margin-bottom: 0.5em; color: #000000;">
+				There isn't always one right answer. Explore thought-provoking legal and political debates, hear both sides, and decide where you stand. (New articles on debates will be added and updated on this page).
+			</p>
 
-        <!-- 2. Main Title and Tiny Paragraph -->
-        <h1>Debates</h1>
-      <p style="margin-bottom: 0.5em; color: #000000;">There isn't always one right answer. Explore thought-provoking legal and political debates, hear both sides, and decide where you stand. (New articles on debates will be added and updated on this page). 
-</p>
-
-        <!-- 3. Expandable Article Slider / Accordion Card -->
-        <div class="article-card" style="border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1.5em; overflow: hidden; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-            
-            <!-- Visible Preview Section -->
-            <div class="article-preview" style="display: flex; align-items: center; padding: 1.5em; gap: 1.5em; flex-wrap: wrap;">
-                
-                <!-- Article Thumbnail -->
-                <div style="flex: 0 0 120px; height: 90px; background: #f2f2f2; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
-                    <span style="font-size: 0.8em; color: #888;">[Image]</span>
-                </div>
-
-                <!-- Article Titles & Short Preview Text -->
-                <div style="flex: 1; min-width: 200px;">
-                    <h3 style="margin: 0 0 0.4em 0; font-size: 1.2em; color: #333;">What Do You Think About Cancelling Someone Online?</h3>
-                    <p style="margin: 0; font-size: 0.9em; color: #666;">Written by A Student's Guide to Law. Last updated: June 26, 2026 </p>
-					<p style="margin: 0; font-size: 0.9em; color: #666;">The term “cancel” in social media usually refers to a way of punishing someone for their actions and/or behavior if it was found to be offensive.</p>
-                </div>
-
-                <!-- Downward Triangle Toggle Button -->
-                <div>
-                    <button onclick="toggleArticle(this)" style="background: none; border: none; cursor: pointer; font-size: 1.2em; color: #6B1D2F; padding: 10px; transition: transform 0.3s ease;">
-                        ▼
-                    </button>
-                </div>
-            </div>
-
-<!-- Hidden Full Article Content (Opens on click) (Article 1) -->
-            <div class="article-content" style="display: none; padding: 0 1.5em 1.5em 1.5em; border-top: 1px solid #f0f0f0; background: #fafafa;">
-                <p style="margin-top: 1em; color: #444; line-height: 1.6;">
-The term “cancel” in social media usually refers to a way of punishing someone for their actions and/or behavior if it was found to be offensive. Support is immediately “canceled”. In other words, support is withdrawn from somebody’s social media page, a business or an organization.</p>
- <p style="margin-top: 1em; color: #444; line-height: 1.6;">It started being used around 8 to 10 years ago, especially during 2016 and 2018 when the whole social media boom started. The process goes like this:
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">
-<ul>
-<li style="color: #000000; font-weight: 500;">Someone calls out a bad or controversial action from someone or something. Sometimes, the target can respond to the situation before it gets too far and give explanations or additional missing information.</li>
-<li style="color: #000000; font-weight: 500;">If the target doesn’t seem to have a proper reason or justification for what they did, people online post information on what they saw and many people join in the campaign. This information is usually posted on social media pages such as Instagram, TikTok, X, etc.</li>
-<li style="color: #000000; font-weight: 500;">People supporting these cancel campaigns ask to remove past and further support. For example, followers or customers.</li> 
-<li style="color: #000000; font-weight: 500;">The target that is being canceled can be removed from their job, lose a lot money, sponsorships, and overall public support.</li>    
-</ul>			
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">According to an article posted by Psychology Today, people support cancel culture because: 
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">
-<ul>
-<li style="color: #000000; font-weight: 500;">Someone known who cancels someone can gain more recognition and fame by exposing someone else. 
-Also, this can make them feel like they brought down someone who was also trying to get at the top of the popular ladder.</li>
-<li style="color: #000000; font-weight: 500;">People enjoy the feeling of unity caused by this community’s campaign against someone. It’s like they’re all together on the same boat trying to fight for the same motive.</li>
-<li style="color: #000000; font-weight: 500;">People believe they can keep in check other people’s beliefs. If someone agrees with the motive as you do, you will recognize them to be not only as right, but also as an associate of some sort. However, if someone is not in favor of the cause, then they are “enemies” and wrong. It gives a feeling of belonging.</li>    
-</ul>			
-</p>			
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">People generally support cancel culture because they believe it can hold people responsible for their actions and give them a punishment for them. It establishes societal boundaries that can stand even after the heat of the campaign is over, and sets the precedent for other similar situations.</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">People who dislike cancel culture argue that:</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">
-<ul>
-<li style="color: #000000; font-weight: 500;">No more second chances. After someone or something gets cancelled, they usually never regains support as they used to before the situation happened. The media seems to never forget what happened.</li>
-<li style="color: #000000; font-weight: 500;">Apologies do nothing. Although the target apologizes or explains, they can usually be ignored and rejected.</li>
-<li style="color: #000000; font-weight: 500;">Punishment is seemed as unfair. Many targets may have done something small long time ago or nothing at all, just a misunderstanding. Targets are given almost no opportunity for consideration.</li>    
-<li style="color: #000000; font-weight: 500;">Some people argue that by cancelling people, free speech right can be threatened. People become scared of saying the wrong thing and being cancelled. 
-</li>
-</ul>			
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">So, what do you think? Surely there’s many consequences to cancelling someone as well as good reasons for it. This is a really big debate currently happening across all social media platforms almost every day with any known issue.</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">Thank you for reading, and explore more if you wish to!
-The sources I used to write this are available down below, take a peek 👀</p>
+			<!-- Expandable Article Slider / Accordion Card -->
+			<div class="article-card" style="border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1.5em; overflow: hidden; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
 				
-<ul>
-<li>Merriam-Webster. (n.d.). Cancel culture. In Merriam-Webster.com dictionary. Retrieved November 16, 2026, from https://www.merriam-webster.com/dictionary/cancel%20culture</li>
-<li>Encyclopædia Britannica. (2026, October 21). Cancel culture: Pros, cons, debate, arguments, social media. Encyclopædia Britannica. https://www.britannica.com/procon/cancel-culture-debate</li>
-<li>Vogels, E. A. (2021, May 19). Americans and "cancel culture": Where some see calls for accountability, others see censorship, punishment. Pew Research Center. https://www.pewresearch.org/internet/2021/05/19/americans-and-cancel-culture-where-some-see-calls-for-accountability-others-see-censorship-punishment/</li>
-<li>Henderson, R. (2019, December 1). 5 reasons why people love cancel culture. Psychology Today. https://www.psychologytoday.com/us/blog/after-service/201912/5-reasons-why-people-love-cancel-culture</li>
-</ul>			
-	
+				<!-- Visible Preview Section -->
+				<div class="article-preview" style="display: flex; align-items: center; padding: 1.5em; gap: 1.5em; flex-wrap: wrap;">
+					
+					<!-- Article Thumbnail -->
+					<div style="flex: 0 0 120px; height: 90px; background: #f2f2f2; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+						<span style="font-size: 0.8em; color: #888;">[Image]</span>
+					</div>
+
+					<!-- Article Titles & Short Preview Text -->
+					<div style="flex: 1; min-width: 200px;">
+						<h3 style="margin: 0 0 0.4em 0; font-size: 1.2em; color: #333;">What Do You Think About Cancelling Someone Online?</h3>
+						<p style="margin: 0; font-size: 0.9em; color: #666;">Written by A Student's Guide to Law. Last updated: June 26, 2026</p>
+						<p style="margin: 0; font-size: 0.9em; color: #666;">The term “cancel” in social media usually refers to a way of punishing someone for their actions and/or behavior if it was found to be offensive.</p>
+					</div>
+
+					<!-- Downward Triangle Toggle Button -->
+					<div>
+						<button onclick="toggleArticle(this)" style="background: none; border: none; cursor: pointer; font-size: 1.2em; color: #6B1D2F; padding: 10px; transition: transform 0.3s ease;">
+							▼
+						</button>
+					</div>
+				</div>
+
+				<!-- Hidden Full Article Content (Opens on click) -->
+				<div class="article-content" style="display: none; padding: 0 1.5em 1.5em 1.5em; border-top: 1px solid #f0f0f0; background: #fafafa;">
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						The term “cancel” in social media usually refers to a way of punishing someone for their actions and/or behavior if it was found to be offensive. Support is immediately “canceled”. In other words, support is withdrawn from somebody’s social media page, a business or an organization.
+					</p>
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						It started being used around 8 to 10 years ago, especially during 2016 and 2018 when the whole social media boom started. The process goes like this:
+					</p>
+					
+					<ul style="margin-top: 0.5em; padding-left: 20px;">
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">Someone calls out a bad or controversial action from someone or something. Sometimes, the target can respond to the situation before it gets too far and give explanations or additional missing information.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">If the target doesn’t seem to have a proper reason or justification for what they did, people online post information on what they saw and many people join in the campaign. This information is usually posted on social media pages such as Instagram, TikTok, X, etc.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">People supporting these cancel campaigns ask to remove past and further support. For example, followers or customers.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">The target that is being canceled can be removed from their job, lose a lot money, sponsorships, and overall public support.</li>
+					</ul>
+
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						According to an article posted by Psychology Today, people support cancel culture because:
+					</p>
+
+					<ul style="margin-top: 0.5em; padding-left: 20px;">
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">Someone known who cancels someone can gain more recognition and fame by exposing someone else. Also, this can make them feel like they brought down someone who was also trying to get at the top of the popular ladder.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">People enjoy the feeling of unity caused by this community’s campaign against someone. It’s like they’re all together on the same boat trying to fight for the same motive.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">People believe they can keep in check other people’s beliefs. If someone agrees with the motive as you do, you will recognize them to be not only as right, but also as an associate of some sort. However, if someone is not in favor of the cause, then they are “enemies” and wrong. It gives a feeling of belonging.</li>
+					</ul>
+
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						People generally support cancel culture because they believe it can hold people responsible for their actions and give them a punishment for them. It establishes societal boundaries that can stand even after the heat of the campaign is over, and sets the precedent for other similar situations.
+					</p>
+					
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						People who dislike cancel culture argue that:
+					</p>
+
+					<ul style="margin-top: 0.5em; padding-left: 20px;">
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">No more second chances. After someone or something gets cancelled, they usually never regains support as they used to before the situation happened. The media seems to never forget what happened.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">Apologies do nothing. Although the target apologizes or explains, they can usually be ignored and rejected.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">Punishment is seemed as unfair. Many targets may have done something small long time ago or nothing at all, just a misunderstanding. Targets are given almost no opportunity for consideration.</li>
+						<li style="color: #000000; font-weight: 500; margin-bottom: 0.5em;">Some people argue that by cancelling people, free speech right can be threatened. People become scared of saying the wrong thing and being cancelled.</li>
+					</ul>
+
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						So, what do you think? Surely there’s many consequences to cancelling someone as well as good reasons for it. This is a really big debate currently happening across all social media platforms almost every day with any known issue.
+					</p>
+					
+					<p style="margin-top: 1em; color: #444; line-height: 1.6;">
+						Thank you for reading, and explore more if you wish to!<br>
+						The sources I used to write this are available down below, take a peek 👀
+					</p>
+						
+					<ul style="margin-top: 0.5em; padding-left: 20px;">
+						<li style="color: #000000; margin-bottom: 0.4em;">Merriam-Webster. (n.d.). Cancel culture. In Merriam-Webster.com dictionary. Retrieved November 16, 2026, from https://www.merriam-webster.com/dictionary/cancel%20culture</li>
+						<li style="color: #000000; margin-bottom: 0.4em;">Encyclopædia Britannica. (2026, October 21). Cancel culture: Pros, cons, debate, arguments, social media. Encyclopædia Britannica. https://www.britannica.com/procon/cancel-culture-debate</li>
+						<li style="color: #000000; margin-bottom: 0.4em;">Vogels, E. A. (2021, May 19). Americans and "cancel culture": Where some see calls for accountability, others see censorship, punishment. Pew Research Center. https://www.pewresearch.org/internet/2021/05/19/americans-and-cancel-culture-where-some-see-calls-for-accountability-others-see-censorship-punishment/</li>
+						<li style="color: #000000; margin-bottom: 0.4em;">Henderson, R. (2019, December 1). 5 reasons why people love cancel culture. Psychology Today. https://www.psychologytoday.com/us/blog/after-service/201912/5-reasons-why-people-love-cancel-culture</li>
+					</ul>
+				</div>
 			</div>
 
-			
- <!-- Article Two -->
-			 <!-- 3. Expandable Article Slider / Accordion Card -->
-        <div class="article-card" style="border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1.5em; overflow: hidden; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-            
-            <!-- Visible Preview Section -->
-            <div class="article-preview" style="display: flex; align-items: center; padding: 1.5em; gap: 1.5em; flex-wrap: wrap;">
-                
-                <!-- Article Thumbnail -->
-                <div style="flex: 0 0 120px; height: 90px; background: #f2f2f2; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
-                    <span style="font-size: 0.8em; color: #888;">[Image]</span>
-                </div>
+		</div>
 
-                <!-- Article Titles & Short Preview Text -->
-                <div style="flex: 1; min-width: 200px;">
-                    <h3 style="margin: 0 0 0.4em 0; font-size: 1.2em; color: #333;">The Articles of Confederation (1776)</h3>
-                    <p style="margin: 0; font-size: 0.9em; color: #666;">Article written by A Student's Guide to Law. Last updated: August 15, 2026 </p>
-					<p style="margin: 0; font-size: 0.9em; color: #666;">The Articles of Confederation organized the U.S.'s government at the time and how the confederation would work. It had to be corrected, though!</p>
-                </div>
+		<!-- JavaScript to handle the dropdown toggle -->
+		<script>
+			function toggleArticle(button) {
+				const card = button.closest('.article-card');
+				const content = card.querySelector('.article-content');
+				
+				if (content.style.display === 'none' || content.style.display === '') {
+					content.style.display = 'block';
+					button.style.transform = 'rotate(180deg)'; // Flips arrow upward when open
+				} else {
+					content.style.display = 'none';
+					button.style.transform = 'rotate(0deg)'; // Flips arrow back down when closed
+				}
+			}
+		</script>
 
-                <!-- Downward Triangle Toggle Button -->
-                <div>
-                    <button onclick="toggleArticle(this)" style="background: none; border: none; cursor: pointer; font-size: 1.2em; color: #6B1D2F; padding: 10px; transition: transform 0.3s ease;">
-                        ▼
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hidden Full Article Content -->
-            <div class="article-content" style="display: none; padding: 0 1.5em 1.5em 1.5em; border-top: 1px solid #f0f0f0; background: #fafafa;">
-                <p style="margin-top: 1em; color: #444; line-height: 1.6;">The Articles of Confederation were the first constitution of the United States. The Articles, drafted in 1977 and ratified in 1781 set how the states would be organized and how the government would work. They had made the centralized government extremely weak because of the fear of tyranny they had once lived under the British. However, according to this list, that arrangement was not working well: </p>
-             <p style="margin-top: 1em; color: #444; line-height: 1.6;">
-<ul>
-<li style="color: #000000; font-weight: 500;">Congress could not collect taxes and control trade between states and other nations.</li>
-<li style="color: #000000; font-weight: 500;">There was no way to make states forcibly supply money or soldiers.</li>
-<li style="color: #000000; font-weight: 500;">To pass laws, nine out of 13 states had to agree.</li> 
-<li style="color: #000000; font-weight: 500;">To amend the articles, a full unanimous (every state had to agree) vote was required by the states. And if you know a little bit about life, it’s pretty hard to get everybody to agree on the same thing. </li>    
-</ul>			
-</p>
-<h3 style="margin-top: 1em; color: #444; line-height: 1.6;">Shay's Rebellion</h3>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">Shay’s rebellion was an armed uprising in western Massachusetts from 1786 to 1787. It was caused by farmers needing to pay their debts to the government. 
-They were lacking cash to pay debts caused by big Massachusetts taxes to pay off war debts. Being jailed and loosing land, farmers uprose and seized weapons at the federal armory in Springfield.  
-In the end, state militia defeated the rebels. 
-It lasted many months because not only local town militias refused to fight the rebels and sometimes even joined them, but also because there was no national army to fund or send troops, meaning private funding was needed to get an army.</p> 
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">This shined a light on the weak government under the Articles because of the lack of an army to stop violence.
-Later on, leaders hooded the Constitutional Convention in 1787 to draft a new constitution with stronger federal government and fix other problems as well (like the Amendment process).</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">The articles of Confederation consists of six sheets of parchment paper stitched together. These are a brief summary of the articles' content.</p>
- <p style="margin-top: 1em; color: #444; line-height: 1.6;">
-<ul>
-<li style="color: #000000; font-weight: 500;">Article I: Gave the name of the confederacy: “The United States of America”.</li>
-<li style="color: #000000; font-weight: 500;">Article II: Said each state was independent and sovereign.</li>
-<li style="color: #000000; font-weight: 500;">Article III: Established a “league of friendship” between states for common defense and mutual and general welfare.</li> 
-<li style="color: #000000; font-weight: 500;">Article IV-V: Every citizen has free ingress and regress from and to every state in the confederacy. If a citizen faced a legal matter such as a felony or misdemeanor, it will be looked into by the state which they fled from. Full faith and credit was given to the states. 
-</li> 
-<li style="color: #000000; font-weight: 500;">Article VI-VIII: Restricted states from making independent foreign treaties or individual warships & standing armies without permission.</li> 
-<li style="color: #000000; font-weight: 500;">Article IX: Granted congress power to declare war, make peace, sign treaties, manage relations with Native Americans, coin money, and run a postal service.</li>
-<li style="color: #000000; font-weight: 500;">Article X-XIII: Detailed emergency powers for committees when Congress adjourned, accepted war debt, and declared the union perpetual unless unanimously altered.</li>
-</ul>			
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">
-The articles established a single-branch national government. This means that there was only a 
-one-house legislature (no House of Representatives, no senate yet), equal states votes & no separate executive or judicial branches yet (no president, no federal courts yet) </p>
-<h3 style="margin-top: 1em; color: #444; line-height: 1.6;">Summary & Conclusion</h3>		
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">The Articles of Confederation were the first constitution of the U.S. after independence from Britain. They were mostly made in a way that organized the government to prevent tyranny, but this brought many problems to the well-being of the country. Violent uprisings and rebellions helped people notice these problems and later on change them. It took some time getting all states to accept the change the Articles of Confederation for the U.S. Constitution, but in the end it was ratified.
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">Thank you for reading! I hope this article helped you understand this important document in the history of the United States.</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">My Sources:</p>
-				<ul>
-	<li>Encyclopaedia Britannica. (2026, October 20). Articles of Confederation. Retrieved November 8, 2026, from https://www.britannica.com/topic/Articles-of-Confederation</li>
-    <li>The Editors of Encyclopaedia Britannica. (2026, October 20). Shays's Rebellion. Encyclopaedia Britannica. Retrieved November 8, 2026, from https://www.britannica.com/event/Shayss-Rebellion</li>
-    <li>HISTORY.com Editors. (2025, August 25). Shays' Rebellion. History.com. Retrieved November 8, 2026, from https://www.history.com/articles/shays-rebellion</li>
-	<li>National Archives and Records Administration. (n.d.). Articles of Confederation (1777). Milestone Documents. Retrieved November 8, 2026, from https://www.archives.gov/milestone-documents/articles-of-confederation</li>			
-	<li>National Constitution Center. (n.d.). Articles of Confederation (1781). Historic Document Library. Retrieved November 8, 2026, from https://constitutioncenter.org/the-constitution/historic-document-library/detail/articles-of-confederation</li>			
-	<li>Office of the Historian. (n.d.). Articles of Confederation, 1777–1781. Milestones in the History of U.S. Foreign Relations. U.S. Department of State. Retrieved November 8, 2026, from https://history.state.gov/milestones/1776-1783/articles</li>			
-				</ul>	
-	
-			</div>
-
-
-
-
-			<!-- Article Three -->
-			 <!-- 3. Expandable Article Slider / Accordion Card -->
-        <div class="article-card" style="border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1.5em; overflow: hidden; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-            
-            <!-- Visible Preview Section -->
-            <div class="article-preview" style="display: flex; align-items: center; padding: 1.5em; gap: 1.5em; flex-wrap: wrap;">
-                
-                <!-- Article Thumbnail -->
-                <div style="flex: 0 0 120px; height: 90px; background: #f2f2f2; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
-                    <span style="font-size: 0.8em; color: #888;">[Image]</span>
-                </div>
-
-                <!-- Article Titles & Short Preview Text -->
-                <div style="flex: 1; min-width: 200px;">
-                    <h3 style="margin: 0 0 0.4em 0; font-size: 1.2em; color: #333;">Federalist 51 by James Madison</h3>
-                    <p style="margin: 0; font-size: 0.9em; color: #666;">Article written by A Student's Guide to Law. Last updated: November 15, 2026 </p>
-					<p style="margin: 0; font-size: 0.9em; color: #666;">When the Articles of Confederation were drafted and ratified new problems and debates emerged. </p>
-                </div>
-
-                <!-- Downward Triangle Toggle Button -->
-                <div>
-                    <button onclick="toggleArticle(this)" style="background: none; border: none; cursor: pointer; font-size: 1.2em; color: #6B1D2F; padding: 10px; transition: transform 0.3s ease;">
-                        ▼
-                    </button>
-                </div>
-            </div>
-
-            <!-- Hidden Full Article Content -->
-            <div class="article-content" style="display: none; padding: 0 1.5em 1.5em 1.5em; border-top: 1px solid #f0f0f0; background: #fafafa;">
-                <p style="margin-top: 1em; color: #444; line-height: 1.6;">When the Articles of Confederation were drafted and ratified new problems and debates emerged. (If you’re not sure what the Articles of Confederation were, make sure to check our previous article that explains it!) The Articles left almost no power to the federal government. For example, no taxes could be raised, no army could be established and there was no control over international and national trade. This created many problems for people because when certain situations took place. When Shay’s Rebellion occurred, the whole nation began realizing that because they had no national army to suppress this outbreak, they struggled to crush it. A new Constitution had to be created to solve these gaps in power that were necessary to maintain a proper organization in society.  </p>
-		
-</p>
-<h3 style="margin-top: 1em; color: #444; line-height: 1.6;">Federalismn</h3>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">Everybody began wondering: how much power should the government have? And how much of the resting power should lie on the states? It became evident that some people had different opinions on federalism than others. Federalism, by definition, is a system of government in which the same territory is controlled by two levels of government. These two levels are government and state. The two sides of this debate were the federalists and the anti-federalists. 
-</p> 
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">Both sides began writing multiple papers and articles regarding their view on how power should be separated. Some famous Federalist authors were Alexander Hamilton, John Jay, and—most notably for this paper—James Madison. Other famous anti-federalist authors were Brutus and Cato, which we will explore in a different article. </p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">The articles of Confederation consists of six sheets of parchment paper stitched together. These are a brief summary of the articles' content.</p>
- <p style="margin-top: 1em; color: #444; line-height: 1.6;">James Madison played a crucial role in drafting the U.S. Constitution, which is why he wrote his papers worrying for how it would be drafted. His main concern was giving the federal government a weak structure and power. He believed that a stronger national government was necessary to handle national defense, commerce and stability. However, this raised a feeling of uneasiness. After declaring independence from the British government, American colonists feared a strong national government that could make society subject to tyranny and abuse. So then, through his paper Federalist 51, James Madison explains his idea on how this improved government that would be created could work in a way that it avoids dictatorship and oppression.		
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">James Madison proposes that the Separation of Powers and Checks and Balances could be able to control the abuse of power by any one branch. Separating the government in a legislative, judicial and executive branches and making every branch dependent of each other is the best way to stop tyranny from happening. This way, not a single branch holds most of the power. Each branch would need to work independently of the others as possible, but still possess the necessary checking powers to keep others where they should be. He also warns that the most important danger that could appear with the new republic would be investing too much power in one branch than in the others.  </p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">This worked great, but Congress still seemed to have too much power over all the branches. So then, Congress was divided into a Bicameral legislature, which means that its power was then further divided by the Senate and the House of Representatives.
-(Visit the article “How are Laws Made?” for a more complete overview on this.) </p>		
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">James Madison also argued that we are stakeholders. We are stakeholders and we have access to speak into the work of each branch of the government. We should be informed on what happens and we have a say in what our representatives do. We can pay professional lobbyist to meet with representatives to speak into the law. To fight for our causes. We can even speak into the law by writing letters or emails to representatives! We can file complaints or meet with bureaucratic agencies to give our opinion or push for a certain policy (law).
-</p>
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">Finally, he explains that the federal government would still not be able to suppress society because power is further divided with the state. It is a pretty fail-safe method! James Madison’s ideas played a crucial role in how our Constitution ended up being ratified as. His ideas are reflected in how the government ended up being organized and how power was equally distributed. </p>				
-<p style="margin-top: 1em; color: #444; line-height: 1.6;">My Sources:</p>
-				<ul>
-	<li>National Constitution Center. (n.d.). Federalist 51 (1788). Retrieved November 15, 2026, from https://constitutioncenter.org/the-constitution/historic-document-library/detail/james-madison-federalist-no-51-1788</li>
-    <li>Legal Information Institute. (2026). Federalism. Cornell Law School. Retrieved November 15, 2026, from https://www.law.cornell.edu/wex/federalism</li>
-    <li>Cato Institute. (2001, March). Policy Report [PDF file]. Cato Institute. https://www.cato.org/sites/cato.org/files/serials/files/policy-report/2001/3/madison.pdf</li>	
-				</ul>	
-	
-			</div>
-
-        </div>
-
-    </div>
-
-    <!-- JavaScript to handle the dropdown toggle -->
-    <script>
-        function toggleArticle(button) {
-            const card = button.closest('.article-card');
-            const content = card.querySelector('.article-content');
-            
-            if (content.style.display === 'none' || content.style.display === '') {
-                content.style.display = 'block';
-                button.style.transform = 'rotate(180deg)'; // Flips arrow upward when open
-            } else {
-                content.style.display = 'none';
-                button.style.transform = 'rotate(0deg)'; // Flips arrow back down when closed
-            }
-        }
+	</body>
+</html>
